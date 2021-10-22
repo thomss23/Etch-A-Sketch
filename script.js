@@ -55,7 +55,7 @@ createSquares(16);
 const reset = document.querySelector("button");
 reset.addEventListener('click', () => {
     
-    let requestPrompt = prompt("How many squares would you like?");
+    let requestPrompt = prompt("How many squares would you like per row?");
     let request = parseInt(requestPrompt);
 
     if(requestPrompt == null) {
