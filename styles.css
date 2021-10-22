@@ -48,10 +48,6 @@ body {
     background-color: rgb(119, 118, 118);
 }
 
-.hovered-square {
-    background-color: white;
-}
-
 .switch {
     position: relative;
     display: inline-block;

@@ -27,9 +27,9 @@ function createSquares(n) {
     squares.forEach((square) => {
         square.addEventListener('mouseover', () => {
             if(rainbowMode == false) {
-                square.classList.add('hovered-square');
+                square.style.backgroundColor = "white";
             } else {
-
+                square.classList.remove('hovered-square');
                 let rColor = random(1, 256);
                 let gColor = random(1, 256);
                 let bColor = random(1, 256);
@@ -62,8 +62,8 @@ reset.addEventListener('click', () => {
         return;
     }
 
-    if((request < 0 || request > 100)) {
-        alert("Wrong input! Please enter a number between 0 and 100");
+    if((request < 1 || request > 100)) {
+        alert("Wrong input! Please enter a number between 1 and 100");
         return;
     } else if(isNaN(request)) {
         alert("Wrong input! Only numeric characters allowed");
